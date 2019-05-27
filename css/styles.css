@@ -41,10 +41,11 @@ span {
 
 #colorCodeBox {
   width:60px;
-  margin-left: 70px; 
+  margin-left: 65px; 
   margin-right: 6px;
   float: left;
   border: 1px solid rgb(168, 150, 150);
+  border-radius: 2px;
 }
 
 #paletteBtn {
@@ -75,6 +76,7 @@ span {
   float: left;
   margin-top: 2px;
   border: 1px solid rgb(168, 141, 141);
+  border-radius: 2px;
 }
 
 .bar {
