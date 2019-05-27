@@ -1,11 +1,51 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="ja">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="index.css">
-    <title></title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+     <title>Color Chart</title>
   </head>
   <body>
-    <div class="hello">Hello World!</div>
-  </body>
+    <section id="colorChartArea">
+      <h1>Color Chart</h1>
+      <p>カラーコードを入力してください</p>
+      <div class="menu">
+        <input type="text" id="colorCodeBox" maxlength="7" value="#">
+        <div id="paletteBtn" class="btn">palette</div>
+      </div>
+      <div id="red" class="param">
+        <span class="r">R </span>
+        <input type="text" id="reds" class="score" value="0">
+        <input type="range" id="redPoint" class="bar" min="0" max="255" step="1" value="0">
+      </div>
+      <div id="green" class="param">
+        <span class="g">G </span>
+        <input type="text" id="greens" class="score" value="0">
+        <input type="range" id="greenPoint" class="bar" min="0" max="255" step="1" value="0">
+      </div>
+      <div id="blue" class="param">
+        <span class="b">B </span>
+        <input type="text" id="blues" class="score" value="0">
+        <input type="range" id="bluePoint" class="bar" min="0" max="255" step="1" value="0">
+      </div>
+      <div id="alpha" class="param">
+          <span class="a">A </span>
+          <input type="text" id="alphas" class="score" value="1">
+          <input type="range" id="alphaPoint" class="bar" min="0" max="1" step="0.1" value="1">
+        </div>
+        <div class="colorChart"></div>
+    </section>
+
+    <section id="modalArea">
+      <div id="paletteModal">
+          <i id="closeBtn" class="btn fas fa-times fa-2x"></i>
+          <div id="colorPalette"></div>
+      </div>
+    </section>
+    <script src="js/main.js"></script>
+   </body>
 </html>
