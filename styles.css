@@ -1,0 +1,157 @@
+
+body {
+  margin:0;
+  background-image: url(../img/mono.jpg);
+  background-size: cover;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+#colorChartArea {
+  width:520px;
+  height:550px;
+  margin: 50px auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  position: absolute;
+}
+
+h1 {
+  font-style: italic;
+  font-size: 30px;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+span {
+  float: left;
+  margin-top: 2px;
+}
+
+.menu {
+  width: 200px;
+  height: 25px;
+  margin: 0 auto;
+  display: inline-block;
+}
+
+#colorCodeBox {
+  width:60px;
+  margin-left: 70px; 
+  margin-right: 6px;
+  float: left;
+  border: 1px solid rgb(168, 150, 150);
+}
+
+#paletteBtn {
+  width: 50px;
+  height: 19px;
+  bottom:5px;
+  font-size: 12px;
+  font-style: italic;
+  background-color: #4f8599;
+  border-radius: 6px;
+  box-shadow: 1px 1px #000a13;
+  border:1px solid  #000a13;
+  float: left;
+  display: none;
+}
+
+.palette:hover {
+  cursor: pointer;
+}
+
+.palette:active {
+  margin-top: 1px;
+  margin-left: 1px;  
+}
+
+.score {
+  width:26px;
+  float: left;
+  margin-top: 2px;
+  border: 1px solid rgb(168, 141, 141);
+}
+
+.bar {
+  width: 255px;
+  left: 10px;
+  /* -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; */
+}
+
+.param {
+  width:320px;
+  height:25px;
+  margin:10px auto 20px;
+}
+
+.r {
+  color: red;
+  font-size:15px;
+  padding-left: 1px;
+}
+
+.g {
+  color: green;
+  font-size:15px;
+}
+
+.b {
+  color: blue;
+  font-size:15px;
+  padding-left: 1px;
+}
+
+.a {
+  color: #000;
+  font-size:15px;
+  padding-left: 1px;
+}
+.colorChart {
+  width: 300px;
+  height: 200px;
+  margin: 20px auto 0;
+  border: 2px solid #000;
+  border-radius: 15px;
+}
+
+/* モーダル */
+.fas {
+  float: right;
+}
+
+.fas:hover {
+  margin:0 0 2px 2px;
+  font-size: 15px;
+}
+
+#paletteModal {
+  width:520px;
+  height:500px;
+  margin: 70px auto;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  border-radius: 2px;
+  z-index: 1;
+  display: none;
+}
+
+#colorPalette {
+  width: 380px;
+  height: 380px;
+  border:1px solid #000;
+  margin-top:80px;
+  margin-left:10px;
+
+}
