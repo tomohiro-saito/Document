@@ -1,6 +1,6 @@
-@media screen and (max-width: 480px) {
-    section {
-        margin-top:50px;
-        width: 320px;
+@media screen and (max-width: 480px) and (max-width: 599px) {
+    #colorChartArea {
+        width: 370px;
+        height: 680px;
     }
 }
