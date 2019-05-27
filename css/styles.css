@@ -1,7 +1,7 @@
 
 body {
   margin:0;
-  background-image: url(../mono.jpg);
+  background-image: url(../img/mono.jpg);
   background-size: cover;
   font-family: 'Times New Roman', Times, serif;
 }
@@ -9,7 +9,7 @@ body {
 #colorChartArea {
   width:520px;
   height:550px;
-  margin: 50px auto;
+  margin: 30px auto;
   top: 0;
   left: 0;
   right: 0;
