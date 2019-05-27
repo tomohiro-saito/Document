@@ -1,7 +1,7 @@
 
 body {
   margin:0;
-  background-image: url(./mono.jpg);
+  background-image: url(../mono.jpg);
   background-size: cover;
   font-family: 'Times New Roman', Times, serif;
 }
