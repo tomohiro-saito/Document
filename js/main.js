@@ -1,17 +1,17 @@
 $(function() {
-  
-  // カラーコードテキストボックスのフォーカスアウト処理
-  $('#colorCodeBox').blur(function() {
-    if ($('#colorCodeBox').val().length === 0) {
-      $('#colorCodeBox').val('#');
-      $('.colorChart').css("background", '');
-    }
-  });
 
-  //　changeイベント
+  // changeイベント
   $('input').on('input change', function() {
     // change対象のクラス
     let currentClass = $(this).attr('class');
+
+    // coloCodeBoxのフォーカスアウト処理
+    if (currentClass === 'colorCodeBox') { 
+      if ($('#colorCodeBox').val().length === 0) {
+        $('#colorCodeBox').val('#');
+        $('.colorChart').css("background", '');
+      }
+    }
 
     // スライドバー変更時処理
     if (currentClass === 'bar') {
@@ -36,6 +36,7 @@ $(function() {
         } else {
           $(boxId).val(alphaBoxNum);
         }
+        // スライドバーに入力値と同じ値を設定
         $(barId).val(alphaBoxNum);
         colorChange();
         return;
