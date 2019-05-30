@@ -4,7 +4,14 @@ $(function() {
   $('input').on('input change', function() {
     // change対象のクラス
     let currentClass = $(this).attr('class');
+    $(currentClass).keypress( function(e) {
+      let key = e.key;
+      let input = /[0-9]/;
+      if (!key.match(input)) {
+        return;
+      }
 
+    });
     // coloCodeBoxのフォーカスアウト処理
     if (currentClass === 'colorCodeBox') { 
       if ($('#colorCodeBox').val().length === 0) {

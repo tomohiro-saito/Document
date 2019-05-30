@@ -8,7 +8,7 @@ body {
 
 #colorChartArea {
   width:520px;
-  height:550px;
+  height:2000px;
   margin: 30px auto;
   top: 0;
   left: 0;
@@ -16,6 +16,11 @@ body {
   bottom: 0;
   text-align: center;
   position: absolute;
+}
+.terms_block {
+  /* ↓position:fixedのヘッダの高さ分アンカーのリンク先がずれるのを修正 */
+  margin-top: -63px;
+  padding-top: 63px;
 }
 
 h1 {
