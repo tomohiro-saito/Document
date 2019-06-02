@@ -1,11 +1,19 @@
 $(function() {
 
   // changeイベント
-  $('input').on('input change', function() {
+  $('input').on('input change', function(e) {
     // change対象のクラス
     let currentClass = $(this).attr('class');
-
-    // coloCodeBoxのフォーカスアウト処理
+    let key;
+    $(currentClass).on('input keydown', function(e) {
+      key = e.key;
+      let error = /[0-9]/;
+      
+      if (!key.match(error)) {
+        return;
+      }
+    });
+    // coloCodeBox変更時処理
     if (currentClass === 'colorCodeBox') { 
       if ($('#colorCodeBox').val().length === 0) {
         $('#colorCodeBox').val('#');
