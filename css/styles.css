@@ -15,12 +15,7 @@ body {
   right: 0;
   bottom: 0;
   text-align: center;
-  position: fixed;
-}
-.terms_block {
-  /* ↓position:fixedのヘッダの高さ分アンカーのリンク先がずれるのを修正 */
-  margin-top: -63px;
-  padding-top: 63px;
+  position: absolute;
 }
 
 h1 {
